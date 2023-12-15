@@ -1,2 +1,2 @@
 # stock-viewer
- A simple app to create stock historal data charts.
+This is a project I made for my Economics class... I'm not sure if it's useful for anyone else, but I'm putting it up here anyway. It's a simple viewer for pre-defined stock data found in the `data` folder. It's written in plain old JavaScript w/ Express and TailwindCSS and then Chart.js for the graphs. Currently, it can only grab data that it was already fed, but maybe soon I'll have this be able to grab data from the internet live :)

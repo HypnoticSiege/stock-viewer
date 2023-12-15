@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-white">
+  <%- include('./partials/metadata') %>
+  <body class="min-h-screen">
+    <%- include('./partials/navbar') %>
+    <div class="m-5">
+      <h1 class="text-3xl font-bold text-gray-700">
+        Luis Quezada's Stock Portfolio
+      </h1>
+      <div class="flex flex-wrap -mx-2 mt-2">
+        <a class="w-full md:w-1/2 lg:w-1/3 px-2" href="/AAPL">
+          <div class="bg-white rounded-lg shadow-lg p-4">
+            <div class="flex flex-row items-center">
+              <div class="flex-shrink pr-4">
+                <div class="rounded-full p-5 bg-blue-600">
+                  <i class="fa fa-phone fa-2x fa-inverse"></i>
+                </div>
+              </div>
+              <div class="flex-1 text-right md:text-center">
+                <h5 class="font-bold text-gray-500">Stock #1</h5>
+                <h3 class="font-bold text-3xl">
+                  $AAPL
+                  <span class="text-green-500"
+                    ><i class="fas fa-caret-up"></i
+                  ></span>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="w-full md:w-1/2 lg:w-1/3 px-2" href="/JPM">
+          <div class="bg-white rounded-lg shadow-lg p-4">
+            <div class="flex flex-row items-center">
+              <div class="flex-shrink pr-4">
+                <div class="rounded-full p-5 bg-blue-600">
+                  <i class="fa fa-bank fa-2x fa-inverse"></i>
+                </div>
+              </div>
+              <div class="flex-1 text-right md:text-center">
+                <h5 class="font-bold text-gray-500">Stock #2</h5>
+                <h3 class="font-bold text-3xl">
+                  $JPM
+                  <span class="text-green-500"
+                    ><i class="fas fa-caret-up"></i
+                  ></span>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="w-full md:w-1/2 lg:w-1/3 px-2" href="/TSLA">
+          <div class="bg-white rounded-lg shadow-lg p-4">
+            <div class="flex flex-row items-center">
+              <div class="flex-shrink pr-4">
+                <div class="rounded-full p-5 bg-blue-600">
+                  <i class="fa fa-charging-station fa-2x fa-inverse"></i>
+                </div>
+              </div>
+              <div class="flex-1 text-right md:text-center">
+                <h5 class="font-bold text-gray-500">Stock #3</h5>
+                <h3 class="font-bold text-3xl">
+                  $TSLA
+                  <span class="text-orange-500"
+                    ><i class="fas fa-caret-down"></i
+                  ></span>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/de41d59788.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

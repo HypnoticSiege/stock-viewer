@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-white">
+  <%- include('./partials/metadata') %>
+  <body class="min-h-screen">
+    <%- include('./partials/navbar') %>
+    <div class="m-5">
+      <h1 class="text-3xl font-bold text-gray-700">
+        $<%= ticker %> Historical Data
+      </h1>
+      <canvas id="myChart"></canvas>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script>
+    const ctx = document.getElementById("myChart");
+    const stock = "[<%- data %>]";
+
+    new Chart(ctx, {
+      type: "line",
+      data: {
+        labels: [
+          "Dec. 2",
+          "Dec. 3",
+          "Dec. 4",
+          "Dec. 5",
+          "Dec. 6",
+          "Dec. 7",
+          "Dec. 8",
+        ],
+        datasets: [
+          {
+            label: "Price per Share",
+            data: JSON.parse(stock),
+            borderWidth: 3,
+          },
+        ],
+      },
+    });
+  </script>
+</html>
